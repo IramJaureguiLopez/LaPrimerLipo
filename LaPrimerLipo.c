@@ -2,8 +2,8 @@
 #include <stdlib.h>
 int main()
 {  
-int precio,opc;
-float preciodescuento;
+int precio,opc,edad;
+char nom;
 puts("MENU");
 puts("1. Consultar precios");
 puts("2. Agendar una cita");
@@ -29,6 +29,15 @@ break;
 		scanf("d%",&precio);
 		if (precio<45000){
 			preintf("Precio menor de 45000 no valido");
+		}
+	  if (precio>45000 && precio <100000){
+			preintf("Su liposuccion seleccionada es la estandard");
+		}
+	  if (precio>100000 && precio <145000){
+			preintf("Su liposuccion seleccionada es la Lujosa");
+		}
+	    if (precio=145000){
+			preintf("Su liposuccion seleccionada es la Deluxe Premium");
 		}
 		system ("pause");
 		break;
